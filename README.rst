@@ -2,11 +2,11 @@
    :target: https://www.gnu.org/licenses/agpl
    :alt: License: AGPL-3
 
-======================
-Inherit Invoice Report
-======================
+===============================
+Add Lots/Serial Numbers in CFDI
+===============================
 
-This module extends the functionality of invoice report of odoo to support new css styles.
+This module extends the functionality of invoice of odoo to support lots/serial numbers in cfdi.
 
 Credits
 =======
@@ -15,7 +15,7 @@ Contributors
 ------------
 
 * Lázaro Rodríguez <lazaro@quadit.mx> (https://www.quadit.mx)
-* Leticia González Contreras <leticia.gonzalez@quadit.mx> (https://www.quadit.mx)
+* Leticia González <leticia.gonzalez@quadit.mx> (https://www.quadit.mx)
 
 
 Do not contact contributors directly about support or help with technical issues.

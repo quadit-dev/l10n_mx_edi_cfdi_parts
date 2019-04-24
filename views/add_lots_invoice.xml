@@ -2,7 +2,7 @@
 <odoo>
     <template id="invoice_lots_template_id" inherit_id="l10n_mx_edi.cfdiv33">
     	<xpath expr="//*[local-name()='Concepto']" position="inside">
-        <!-- <xpath expr="//cfdi:Retenciones" position="after"> -->
+
              <t t-foreach="record.invoice_line_ids"  t-as="line">
                 <t t-foreach="line.prod_lot_ids" t-as="l">
                     <cfdi:Parte
@@ -17,6 +17,7 @@
                     </cfdi:Parte>
                 </t>
             </t>
+
         </xpath>
     </template>
 </odoo>
