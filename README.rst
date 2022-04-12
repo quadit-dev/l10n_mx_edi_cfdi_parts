@@ -15,7 +15,7 @@ Contributors
 ------------
 
 * Lázaro Rodríguez <lazaro@quadit.mx> (https://www.quadit.mx)
-* Leticia González <leticia.gonzalez@quadit.mx> (https://www.quadit.mx)
+* Gerardo Mixteco <gerardo.mixteco@quadit.mx> (https://www.quadit.mx)
 
 
 Do not contact contributors directly about support or help with technical issues.

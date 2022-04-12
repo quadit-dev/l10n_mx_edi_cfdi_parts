@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="invoice_lots_template_id" inherit_id="l10n_mx_edi.cfdiv33">
-    	<xpath expr="//*[local-name()='Concepto']" position="inside">
-
-             <t t-foreach="record.invoice_line_ids"  t-as="line">
-                <t t-foreach="line.prod_lot_ids" t-as="l">
+    	<xpath expr="//*[local-name()='Concepto']" position="inside"> 
+            <t t-set="lot_values" t-value="record._get_invoiced_lot_values()"/>
+            <t t-if="lot_values">
+                <t t-foreach="range(int(line.quantity))" t-as="l">
                     <cfdi:Parte
-                    	xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
-                        t-att-Importe="line.price_subtotal"
+                        xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
+                        t-att-Importe="line.price_unit"
                         t-att-ValorUnitario="line.price_unit"
-                        t-att-Descripcion="line.name"
-                        t-att-Unidad="line.uom_id.name"
-                        t-att-Cantidad="line.quantity"
-                        t-att-NoIdentificacion="l.name"
-                        t-att-ClaveProdServ="line.product_id.l10n_mx_edi_code_sat_id.code">
+                        t-att-Descripcion="record._concat_info(line.name, lot_values[l]['lot_name'])"
+                        t-att-Unidad="line.product_uom_id.name"
+                        t-att-Cantidad="1.0"
+                        t-att-NoIdentificacion="line.product_id.default_code"
+                        t-att-ClaveProdServ="line.product_id.unspsc_code_id.code">
                     </cfdi:Parte>
                 </t>
             </t>
-
         </xpath>
     </template>
 </odoo>
