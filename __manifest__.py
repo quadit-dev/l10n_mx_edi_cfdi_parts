@@ -6,8 +6,9 @@
     'name': "Add Lots/Serial Numbers in CFDI",
     'version': '15.0.1.0.0',
     'summary': "Module for add lots in the invoice",
-    'author':  'Quadit, S.A. de C.V.',
+    'author': 'QUADIT',
     'website': "https://www.quadit.mx",
+    'support': 'support@quadit.mx',
     'category': 'Hidden',
     'depends': [
         "account",

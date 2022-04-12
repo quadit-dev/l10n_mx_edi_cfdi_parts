@@ -16,6 +16,7 @@ Contributors
 
 * Lázaro Rodríguez <lazaro@quadit.mx> (https://www.quadit.mx)
 * Gerardo Mixteco <gerardo.mixteco@quadit.mx> (https://www.quadit.mx)
+* Luis González <luis.gonzalez@quadit.mx> (https://www.quadit.mx)
 
 
 Do not contact contributors directly about support or help with technical issues.
@@ -23,11 +24,10 @@ Do not contact contributors directly about support or help with technical issues
 Maintainer
 ----------
 
-.. image:: https://pbs.twimg.com/profile_images/942255530021609472/tB1otoX7_400x400.jpg
-   :alt: Quadit
-   :target: https://www.quadit.mx
+.. image:: https://www.quadit.mx/img/logo.svg
+   :alt: QUADIT
+   :target: https://www.quadit.mx/es
+   :width: 200
 
-This module is maintained by Quadit, S.A. de C.V.
-
-To contribute to this module, please visit https://www.quadit.mx
+These modules are maintained by QUADIT, SA DE CV.
 
